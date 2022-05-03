@@ -2,6 +2,7 @@ export function myFunction() {
     return true;
 }
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
+
 /* 
 
 Input:
@@ -14,8 +15,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(booger) {
+    return `${booger}!!!`;
 }
 
 // This function should take in a number and multiply it by seven
