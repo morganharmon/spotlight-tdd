@@ -81,7 +81,7 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return [Number(firstNumber), Number(secondNumber), Number(thirdNumber)];
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
