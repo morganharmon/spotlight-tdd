@@ -65,7 +65,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (firstNumber / secondNumber * thirdNumber);
 }
 
 // This function should take in three numbers and return those numbers in an array
