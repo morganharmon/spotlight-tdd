@@ -164,7 +164,8 @@ Output:
 */
 
 export function renderDogLI(dog) {
-    return true;
+    
+    return dog.name;
 }
 
 // This function should take a dog object and return a div with the dog's information
