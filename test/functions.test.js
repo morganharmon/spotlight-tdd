@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { myFunction, addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, returnAsAnArray, returnAsAString } from '../functions.js';
+import { myFunction, addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, returnAsAnArray, returnAsAString, makeLuckyGreeting } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -63,6 +63,14 @@ test('returnAsAString and return those three numbers mushed together as a string
     const expected = '845';
 
     const actual = returnAsAString('8', '4', '5');
+
+    expect.deepEqual(actual, expected);
+});
+
+test('makeLuckyGreeting should take in two numbers and return a greeting announcing that the sum of those numbers is todays lucky number', (expect) => {
+    const expected = 'Hello! Your lucky number for the day is 12.';
+
+    const actual = makeLuckyGreeting('8', '4');
 
     expect.deepEqual(actual, expected);
 });
