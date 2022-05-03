@@ -90,11 +90,3 @@ test('getLastItem should take an array and return the last item in the array, no
 
     expect.deepEqual(actual, expected);
 });
-
-test('renderDogLi should take a dog object and return an <li> with the name of dog</li>', (expect) => {
-    const expected = <li>Benny</li>;
-
-    const actual = renderDogLI({name: 'Benny', age: 6 });
-
-    expect.deepEqual(actual.outerHTML, expected);
-});
